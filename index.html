@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/main.js" type='module'></script>
+  <title>Codelandia - Desafio 04 - Login</title>
+</head>
+
+<body>
+  <div id="container">
+    <strong>Bem-vindo de volta</strong>
+    <h1>Faça Login na sua conta</h1>
+    <form>
+      <label for="email">E-mail</label>
+      <div class="input-wrapper">
+        <input type="text" id="email" placeholder="exemplo@gmail.com">
+      </div>
+      <label for="password">Senha</label>
+      <div class="input-wrapper">
+        <input type="password" id="password" placeholder="******">
+      </div>
+      <div class="links">
+        <div class="checkbox">
+          <input type="checkbox" name="remember" id="remember">
+          <label for="remember">Lembre de mim</label>
+        </div>
+        <a href="#">Esqueceu a senha?</a>
+      </div>
+      <button type="button">Entrar na conta</button>
+      <a href="#" class="social">
+        <img src="./assets/google-login.svg" alt="Login com o Google">
+        Ou faça login com o Google
+      </a>
+    </form>
+    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+:root {
+   font-size: 62.5%;
+   --clr-brand: #1E9E6A;
+   --clr-dark-10: #1A202C;
+   --clr-dark-20: #656769;
+   --clr-dark-30: #E8E8E8;
+   --clr-dark-40: #F7FAFC;
+   --clr-dark-50: #FFFFFF;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: 'Archivo', sans-serif;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+input,
+textarea,
+button,
+fieldset {
+   border: none;
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+#container {
+   display: flex;
+   flex-direction: column;
+   padding: 4.8rem 2.4rem;
+   min-width: 100%;
+}
+
+#container strong {
+   font-size: 1.6rem;
+   font-weight: 500;
+   margin-bottom: 0.8rem;
+}
+
+#container h1 {
+   font-size: 2.4rem;
+}
+
+form {
+   margin-top: 4rem;
+   display: flex;
+   flex-direction: column;
+}
+
+form label {
+   font-size: 1.4rem;
+   margin-bottom: 1.2rem;
+}
+
+form .input-wrapper {
+   padding: 1.6rem;
+   background: var(--clr-dark-40);
+   border: 1px solid var(--clr-dark-30);
+   border-radius: 0.4rem;
+   margin-bottom: 3.2rem;
+}
+
+.input-wrapper:nth-child(4) {
+   margin-bottom: 2.4rem;
+}
+
+form .input-wrapper input {
+   color: var(--clr-dark-20);
+   background-color: transparent;
+   outline: none;
+   width: 100%;
+}
+
+form .links {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 5.6rem;
+}
+
+form .links .checkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.8rem;
+}
+
+form .links .checkbox label {
+   margin-bottom: 0;
+   color: var(--clr-dark-10);
+}
+
+form .links .checkbox input[type="checkbox"] {
+   appearance: none;
+   border-radius: 50%;
+   border: 1px solid var(--clr-dark-30);
+   background-color: var(--clr-dark-40);
+   height: 1.4rem;
+   width: 1.4rem;
+   display: grid;
+   place-items: center;
+   transition: background ease-in-out 0.2s;
+}
+
+form .links .checkbox input[type="checkbox"]:checked {
+   background: var(--clr-dark-10);
+}
+
+form .links .checkbox input[type="checkbox"]::before {
+   transform: scale(0);
+   transition: scale ease-in-out 0.1s;
+}
+
+form .links .checkbox input[type="checkbox"]:checked::before {
+   content: "";
+   width: 0.4rem;
+   height: 0.4rem;
+   background-color: var(--clr-dark-50);
+   border-radius: 50%;
+   transform: scale(1);
+}
+
+form .links a {
+   color: var(--clr-brand);
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+
+form button {
+   padding: 1.4rem 3.2rem;
+   border-radius: 0.4rem;
+   background: var(--clr-brand);
+   color: var(--clr-dark-50);
+   margin-bottom: 2.4rem;
+   font-weight: 600;
+}
+
+form>a.social {
+   padding: 1.4rem 3.2rem;
+   background-color: var(--clr-dark-10);
+   color: var(--clr-dark-50);
+   border-radius: 0.4rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2rem;
+   font-weight: 600;
+}
+
+#container p {
+   margin-top: 6.4rem;
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: var(--clr-dark-10);
+   text-align: center;
+}
+
+#container p>a {
+   color: var(--clr-brand);
+}
