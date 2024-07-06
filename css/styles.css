@@ -169,3 +169,38 @@ form>a.social {
 #container p>a {
    color: var(--clr-brand);
 }
+
+@media(min-width: 768px) {
+   #container {
+      margin: 0 auto;
+      min-width: 40rem;
+   }
+
+   #container strong {
+      font-size: 2rem;
+   }
+
+   #container h1 {
+      font-size: 3.2rem;
+   }
+
+   form label,
+   form input,
+   form a {
+      font-size: 1.6rem;
+   }
+
+   form button,
+   form>a.social {
+      font-size: 1.8rem;
+   }
+
+   form>a.social img {
+      width: 2.4rem;
+      height: 2.4rem;
+   }
+
+   #container p {
+      font-size: 2rem;
+   }
+}
